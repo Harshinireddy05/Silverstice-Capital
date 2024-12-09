@@ -15,8 +15,7 @@ const teamMembers = [
     bio: 'Srindhi is a passionate entrepreneur with a knack for creating innovative and data-driven solutions for financial markets. She is dedicated to driving our vision forward and making a positive impact on the world.',
     social: {
       linkedin: '#',
-      twitter: '#',
-      github: '#'
+      twitter: '#'
     }
   },
   {
@@ -26,8 +25,7 @@ const teamMembers = [
     bio: 'Hasvanth is a visionary leader with a focus on creating meaningful change through management and consulting. He is dedicated to driving our mission forward.',
     social: {
       linkedin: '#',
-      twitter: '#',
-      github: '#'
+      twitter: '#'
     }
   },
   {
@@ -48,8 +46,7 @@ const teamMembers = [
     bio: 'Aishani is passionate about creating impactful data-driven solutions that blend innovation, sustainability, and real-world problem-solving. She is dedicated to delivering efficient solutions that drive meaningful progress.',
     social: {
       linkedin: '#',
-      twitter: '#',
-      github: '#'
+      twitter: '#'
     }
   },
   {
