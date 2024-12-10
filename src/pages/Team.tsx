@@ -51,7 +51,7 @@ const teamMembers = [
   },
   {
     name: 'Harshini Reddy Nellore',
-    role: 'Frontend Developer ',
+    role: 'Frontend Developer',
     image: Harshini,
     bio: 'Harshini is a creative frontend developer with a passion for building intuitive websites. She brings a unique blend of design and development skills to create seamless web experiences.',
     social: {
@@ -60,7 +60,6 @@ const teamMembers = [
       github: '#'
     }
   },
-  
 ];
 
 export function Team() {
@@ -119,15 +118,21 @@ export function Team() {
                   <p className="text-blue-600 font-medium mb-3">{member.role}</p>
                   <p className="text-gray-600 mb-4">{member.bio}</p>
                   <div className="flex space-x-4">
-                    <a href={member.social.linkedin} className="text-gray-600 hover:text-blue-600 transition-colors">
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a href={member.social.twitter} className="text-gray-600 hover:text-blue-600 transition-colors">
-                      <Twitter className="w-5 h-5" />
-                    </a>
-                    <a href={member.social.github} className="text-gray-600 hover:text-blue-600 transition-colors">
-                      <Github className="w-5 h-5" />
-                    </a>
+                    {member.social.linkedin && (
+                      <a href={member.social.linkedin} className="text-gray-600 hover:text-blue-600 transition-colors">
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    )}
+                    {member.social.twitter && (
+                      <a href={member.social.twitter} className="text-gray-600 hover:text-blue-600 transition-colors">
+                        <Twitter className="w-5 h-5" />
+                      </a>
+                    )}
+                    {member.social.github && (
+                      <a href={member.social.github} className="text-gray-600 hover:text-blue-600 transition-colors">
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

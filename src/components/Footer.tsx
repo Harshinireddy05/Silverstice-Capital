@@ -63,10 +63,10 @@ export function Footer({ onNavigate }: FooterProps) {
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-600">
+              <a href="https://www.linkedin.com/company/silverstice/" target="_blank" className="text-gray-400 hover:text-blue-600">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-600">
+              <a href="https://www.instagram.com/silverstice.capital/" target="_blank" className="text-gray-400 hover:text-blue-600">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
