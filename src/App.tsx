@@ -7,6 +7,8 @@ import { About } from './pages/About';
 import { ServicesPage } from './pages/ServicesPage';
 import { Team } from './pages/Team';
 import { useState } from 'react';
+// import { Contact } from 'lucide-react';
+import Contact from './pages/Contact';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -32,6 +34,8 @@ function App() {
         <ServicesPage />
       ) : currentPage === 'team' ? (
         <Team />
+        ) : currentPage === 'contact' ? (
+        <Contact />
       ) : null}
       
       <Footer onNavigate={handleNavigation} />

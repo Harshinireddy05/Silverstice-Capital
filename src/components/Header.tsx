@@ -58,7 +58,12 @@ export function Header({ onNavigate, currentPage }: HeaderProps) {
             >
               Team
             </Link>
-            <Link href="#contact">Contact</Link>
+            <Link href="#"
+            onClick={() => handleNavClick('contact')}
+            className={currentPage === 'contact' ? 'text-blue-600' : ''}
+            >
+              Contact
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -101,7 +106,11 @@ export function Header({ onNavigate, currentPage }: HeaderProps) {
             >
               Team
             </Link>
-            <Link href="#contact" className="block">Contact</Link>
+            <Link href="#" onClick={() => handleNavClick('contact')}
+            className={currentPage === 'contact' ? 'text-blue-600' : ''}
+            >
+              Contact
+            </Link>
           </nav>
         )}
       </div>
