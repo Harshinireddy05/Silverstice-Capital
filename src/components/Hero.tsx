@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { fadeInUp } from '../utils/animations';
+import HomePageVideo from '../assets/HomePageVideo.mp4';
 
 export function Hero() {
   return (
@@ -10,11 +11,15 @@ export function Hero() {
         transition={{ duration: 1 }}
         className="absolute inset-0"
       >
-        <img
-          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
-          alt="Technology Background"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src={HomePageVideo} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/50" />
       </motion.div>
       <div className="relative h-full flex items-center justify-center text-center">
